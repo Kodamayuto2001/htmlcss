@@ -29,6 +29,7 @@ header {
     width: 100%;
     background-color: #1e212a;
     color: #fff;
+    display: flex;
 }
 
 main {
@@ -44,7 +45,7 @@ main {
 }
 
 .board {
-    background-color: wheat;
+    /* background-color: wheat; */
     width: 320px;
     display: flex;
     flex-flow: column;
@@ -55,19 +56,23 @@ main {
 }
 
 .board .title {
-    background-color: yellow;
-    width: 100%;
-    height: 40px;
+    /* background-color: yellow; */
+    margin: 5px;
+    padding-bottom: 2px;
+    font-size: xx-large;
 }
 
 .board section {
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     width: 100%;
 }
 
 .board section h2 {
-    background-color: violet;
+    /* background-color: violet; */
     height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: x-large;
 }
 
 .board table {
@@ -75,14 +80,37 @@ main {
 }
 
 .board table thead tr th ul {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+.board table thead tr th ul li {
+    /* background-color: cadetblue; */
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    font-size: medium;
 }
 
 .board table tbody tr td ul {
-    background-color: azure;
+    /* background-color: azure; */
+    font-size: x-large;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+    margin-right: 5px;
 }
 
+.board table tbody tr td ul li a {
+    text-decoration: none;
+}
+
+.board table tfoot tr td {
+    font-size: larger;
+}
