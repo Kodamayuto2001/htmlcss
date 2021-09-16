@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Noto Sans JP', sans-serif;
+
+    color: #1e211e;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    /* background-color: beige; */
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    height: 56px;
+    width: 100%;
+    background-color: #1e212a;
+    color: #fff;
+}
+
+main {
+    /* background-color: aqua; */
+    height: 100%;  
+    display: flex;  
+}
+
+.leftsidebar {
+    width: 68px;
+    background-color: white;
+    border-right: 1px solid #e3e4e6;
+}
+
+.board {
+    background-color: wheat;
+    width: 320px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding-top: 48px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.board .title {
+    background-color: yellow;
+    width: 100%;
+    height: 40px;
+}
+
+.board section {
+    background-color: yellowgreen;
+    width: 100%;
+}
+
+.board section h2 {
+    background-color: violet;
+    height: 40px;
+}
+
+.board table {
+    width: 100%;
+}
+
+.board table thead tr th ul {
+    background-color: antiquewhite;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board table tbody tr td ul {
+    background-color: azure;
+}
+
