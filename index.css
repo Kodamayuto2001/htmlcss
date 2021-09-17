@@ -32,8 +32,74 @@ header {
     display: flex;
 }
 
+header a {
+    width: 68px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .wrapper {
+    margin-top: -16px;
+    margin-left: -16px;
+}
+
+header .icon {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #BEBFC2;
+}
+
+header .degrees45 {
+    transform: rotate(45deg);
+    animation: rotate-anime 3s linear infinite;
+}
+
+header .degrees45-rotate {
+    animation: rotate-degrees45 3s linear infinite;
+}
+
+@keyframes rotate-degrees45 {
+    0%  {transform: rotate(45deg);}
+    100%  {transform: rotate(405deg);}
+}
+
+@keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);}
+}
+
+header input {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: none;
+    background-color: transparent;
+    color: #eff0f2;
+    transition: 0.3s;
+    width: 160px;
+    outline: none;
+}
+
+header input:hover {
+    background-color: #41444b;
+}
+
+header input:focus {
+    background-color: #41444b;
+}
+
+header hr {
+    margin: 16px;
+    margin-left: 0px;
+    border: 1px solid #65676E;
+}
+
 main {
-    /* background-color: aqua; */
+    
     height: 100%;  
     display: flex;  
 }
@@ -50,7 +116,7 @@ main {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    padding-top: 48px;
+    padding-top: 24px;
     margin-left: 22px;
     margin-right: 22px;
 }
@@ -63,8 +129,11 @@ main {
 }
 
 .board section {
-    /* background-color: yellowgreen; */
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    background-color: #ebecf0;;
 }
 
 .board section h2 {
@@ -111,6 +180,7 @@ main {
     text-decoration: none;
 }
 
-.board table tfoot tr td {
+.board table tfoot tr td p {
     font-size: larger;
+    margin-left: 5px;
 }
