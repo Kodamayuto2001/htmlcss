@@ -136,12 +136,14 @@ main {
     background-color: #ebecf0;;
 }
 
-.board section h2 {
+.board section h2 button {
     /* background-color: violet; */
     height: 40px;
     margin-left: 5px;
     margin-right: 5px;
     font-size: x-large;
+    border: none;
+    outline: none;
 }
 
 .board table {
