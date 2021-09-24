@@ -1,0 +1,184 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Noto Sans JP', sans-serif;
+
+    color: #1e211e;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    /* background-color: beige; */
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    height: 56px;
+    width: 100%;
+    background-color: #1e212a;
+    color: #fff;
+    display: flex;
+}
+
+header a {
+    width: 68px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .wrapper {
+    margin-top: -16px;
+    margin-left: -16px;
+}
+
+header .icon {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #BEBFC2;
+}
+
+header .degrees45 {
+    transform: rotate(45deg);
+    animation: rotate-anime 3s linear infinite;
+}
+
+header .degrees45-rotate {
+    animation: rotate-degrees45 3s linear infinite;
+}
+
+@keyframes rotate-degrees45 {
+    0%  {transform: rotate(45deg);}
+    100%  {transform: rotate(405deg);}
+}
+
+@keyframes rotate-anime {
+    0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);}
+}
+
+header input {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: none;
+    background-color: transparent;
+    color: #eff0f2;
+    transition: 0.3s;
+    width: 160px;
+    outline: none;
+}
+
+header input:hover {
+    background-color: #41444b;
+}
+
+header input:focus {
+    background-color: #41444b;
+}
+
+header hr {
+    margin: 16px;
+    margin-left: 0px;
+    border: 1px solid #65676E;
+}
+
+main {
+    
+    height: 100%;  
+    display: flex;  
+}
+
+.leftsidebar {
+    width: 68px;
+    background-color: white;
+    border-right: 1px solid #e3e4e6;
+}
+
+.board {
+    /* background-color: wheat; */
+    width: 320px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding-top: 24px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.board .title {
+    /* background-color: yellow; */
+    /* margin: 5px; */
+    padding-bottom: 2px;
+    font-size: xx-large;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.board .title input {
+    height: 115%;
+    box-shadow: 0 0 8px gray;
+    outline: none;
+    border: none;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+}
+
+.board .title input:hover {
+    border: 2px solid #346454;
+    margin-bottom: -2px;
+    margin-left: -2px;
+}
+
+.board .title input:focus {
+    border: 2px solid #346454;
+    margin-bottom: -2px;
+    margin-left: -2px;
+}
+
+.board table {
+    width: 100%;
+}
+
+.board table thead tr th button {
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 8px gray;
+    margin-bottom: 20px;
+}
+
+.board table thead tr th button:hover {
+    cursor: pointer;
+}
+
+.board table tbody {
+    background-color: yellowgreen;
+    width: 100%;
+}
+
+.board table tbody tr td textarea {
+    height: 40px;
+    width: 100%;
+}
