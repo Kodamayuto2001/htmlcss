@@ -256,7 +256,20 @@ main {
     align-items: center;
 }
 
+.board .task-list li .card-circle--done,
 .board .task-list li .card-circle {
+    /* width: 20px;
+    height: 20px; */
+    border-radius: 50%;
+    box-shadow: 0 0 8px gray;
+    margin-left: 5px;
+    margin-right: 10px;
+
     height: 15px;
     width: 15px;
+}
+
+.board .task-list li .card-circle--done {
+    box-shadow: 0 0 16px #346454;
+    border: 1px solid #67b098;
 }
