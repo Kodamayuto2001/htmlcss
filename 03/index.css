@@ -8,6 +8,7 @@ input[type='checkbox']:checked + body {
 
 input[type='checkbox']:checked + .popup-wrapper {
     position: absolute;
+    top: 16px;
     left: calc(50% - 400px);
     display: flex;
     justify-content: center;
@@ -20,7 +21,7 @@ input[type='checkbox']:checked + .popup-wrapper {
     height: 947px;
     display: flex;
     flex-direction: column;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .popup .header {
@@ -29,8 +30,8 @@ input[type='checkbox']:checked + .popup-wrapper {
     align-items: center;
     height: 52px;
     background-color: bisque;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .popup-option {
