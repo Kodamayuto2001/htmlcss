@@ -334,3 +334,7 @@ main {
     margin-top: 26px;
     width: 320px;
 }
+
+.popup {
+    display: none;
+}

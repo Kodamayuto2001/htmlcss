@@ -1,0 +1,61 @@
+.popup-wrapper {
+    display: none;
+}
+
+input[type='checkbox']:checked + body {
+    filter: blur(2px);
+}
+
+input[type='checkbox']:checked + .popup-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: aqua;
+    width: 800px;
+    height: 947px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.popup .header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 52px;
+    background-color: bisque;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.popup-option {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    margin-right: 8px;
+}
+
+.popup-option::before,
+.popup-option::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 1px;
+    left: calc(16px - 0.5px);
+    top: calc(16px - 10px);
+    transform: rotate(45deg);
+    background-color: chartreuse;
+}
+
+.popup-option::after {
+    transform: rotate(-45deg);
+}
